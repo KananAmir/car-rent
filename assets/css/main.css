@@ -370,7 +370,7 @@ nav.menu .fa-bars {
   color: #FFFFFF;
   border: none;
   border-radius: 0.4rem;
-  padding: 0px 2rem;
+  padding: 1rem 2rem;
   gap: 0.8rem;
   font-weight: 600; }
   .prime-btn:hover {
@@ -388,7 +388,7 @@ nav.menu .fa-bars {
   color: #FFFFFF;
   border: none;
   border-radius: 0.4rem;
-  padding: 0px 2rem;
+  padding: 1rem 2rem;
   gap: 0.8rem;
   font-weight: 700; }
   .rent_now-btn:hover {
