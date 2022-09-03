@@ -342,7 +342,32 @@ nav.menu .fa-bars {
       margin-right: unset; } }
 
 main {
-  background-color: #f6f7f9; }
+  background-color: #F6F7F9; }
+
+#sidebar {
+  display: none;
+  box-sizing: border-box;
+  padding: 32px 34px;
+  padding-top: 32px;
+  border-top: 1px solid #F6F7F9;
+  position: absolute;
+  background-color: white;
+  height: 100vh; }
+  @media (max-width: 768px) {
+    #sidebar {
+      display: block; } }
+  #sidebar span {
+    color: #90A3BF; }
+  #sidebar label {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #596780; }
+  #sidebar .range {
+    width: 260px; }
+
+#details {
+  height: 100vh; }
 
 #banner {
   background-color: #f6f7f9; }
@@ -394,68 +419,51 @@ main {
   #banner .banner-item.two {
     background-color: #3563e9; }
     #banner .banner-item.two button {
-      background-color: #54a6ff; }
-
-.card-component, .card {
-  padding: 2.4rem;
-  background-color: #ffffff;
-  border-radius: 10px; }
-  .card-component .car-name, .card .car-name {
-    font-size: 2rem;
-    font-weight: 700; }
-  .card-component .like .fa-heart, .card .like .fa-heart {
-    font-size: 2rem;
-    cursor: pointer; }
-    .card-component .like .fa-heart.active, .card .like .fa-heart.active {
-      color: red; }
-  .card-component .car-model, .card .car-model {
-    font-size: 1.4rem;
-    color: #90a3bf;
-    font-weight: 700; }
-  .card-component .car-img, .card .car-img {
-    padding: 8rem 1.2rem; }
-    .card-component .car-img img, .card .car-img img {
-      width: 100%; }
-  .card-component .parameters, .card .parameters {
-    margin-bottom: 2.6rem; }
-    .card-component .parameters span, .card .parameters span {
-      font-size: 1.2rem;
-      color: #90a3bf;
-      margin-left: 0.6rem; }
-    .card-component .parameters img, .card .parameters img {
-      width: 2rem; }
-  .card-component .price, .card .price {
-    font-size: 2rem;
-    font-weight: 700; }
-    .card-component .price span, .card .price span {
-      font-size: 1.4rem;
-      color: #90a3bf; }
-  .card-component .discount, .card .discount {
-    color: #90a3bf;
-    font-weight: 700;
-    font-size: 1.3rem;
-    margin-top: 0.4rem;
-    text-decoration: line-through; }
-
-.cars-category .heading {
-  margin: 3rem 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .cars-category .heading .title {
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: #90a3bf;
-    margin-left: 2rem; }
-  .cars-category .heading .view-all {
-    color: #3563e9;
-    font-size: 1.6rem;
-    font-weight: 600; }
-
-.car-count {
-  font-size: 14px;
-  color: #90a3bf;
-  font-weight: 500; }
+      background-color: #54A6FF; }
+  #banner .selections-wrapper {
+    padding-top: 32px;
+    position: relative; }
+    #banner .selections-wrapper .selection-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 26px 48px; }
+      @media (max-width: 992px) {
+        #banner .selections-wrapper .selection-box {
+          margin-bottom: 20px; } }
+      #banner .selections-wrapper .selection-box label {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        display: inline-block;
+        margin-bottom: 18px; }
+      #banner .selections-wrapper .selection-box .select-item {
+        border-right: 1px solid rgba(195, 212, 233, 0.4); }
+        #banner .selections-wrapper .selection-box .select-item h6 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          margin-bottom: 8px; }
+        #banner .selections-wrapper .selection-box .select-item select {
+          border: none;
+          width: 100%;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 15px;
+          color: #90a3bf; }
+        #banner .selections-wrapper .selection-box .select-item select:focus {
+          outline: none !important; }
+  #banner .icon {
+    position: relative; }
+    #banner .icon .bi-arrow-down-up {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: #3563E9;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 10px; }
 
 main {
   background-color: #f6f7f9;
