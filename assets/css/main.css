@@ -340,6 +340,34 @@ nav.menu .fa-bars {
     #footer .privacy-and-terms li:first-child {
       margin-right: unset; } }
 
+main {
+  background-color: #F6F7F9; }
+
+#sidebar {
+  display: none;
+  box-sizing: border-box;
+  padding: 32px 34px;
+  padding-top: 32px;
+  border-top: 1px solid #F6F7F9;
+  position: absolute;
+  background-color: white;
+  height: 100vh; }
+  @media (max-width: 768px) {
+    #sidebar {
+      display: block; } }
+  #sidebar span {
+    color: #90A3BF; }
+  #sidebar label {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #596780; }
+  #sidebar .range {
+    width: 260px; }
+
+#details {
+  height: 100vh; }
+
 #banner {
   background-color: #F6F7F9; }
   #banner .banner-item {
@@ -425,16 +453,16 @@ nav.menu .fa-bars {
           outline: none !important; }
   #banner .icon {
     position: relative; }
-  #banner .fa-arrow-right-arrow-left {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: #3563E9;
-    font-size: 20px;
-    padding: 15px;
-    border-radius: 10px; }
+    #banner .icon .bi-arrow-down-up {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: #3563E9;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 10px; }
 
 main {
   background-color: #F6F7F9;
