@@ -193,7 +193,7 @@ nav.desktop {
       font-size: 32px;
       line-height: 150%;
       margin-right: 64px;
-      color: #3563E9; }
+      color: #3563e9; }
       @media (max-width: 992px) {
         nav.desktop .left h3 {
           margin-right: 30px; } }
@@ -248,7 +248,7 @@ nav.mobile {
       font-weight: 700;
       font-size: 24px;
       line-height: 120%;
-      color: #3563E9; }
+      color: #3563e9; }
     nav.mobile .heading img {
       width: 28px;
       height: 28px; }
@@ -292,7 +292,7 @@ nav.menu .fa-bars {
   font-size: 3.2rem;
   line-height: 4.8rem;
   margin-bottom: 1.6rem;
-  color: #3563E9; }
+  color: #3563e9; }
 
 #footer .description {
   font-size: 1.6rem;
@@ -326,7 +326,8 @@ nav.menu .fa-bars {
   color: #1a202c; }
 
 #footer hr {
-  border: 1px solid rgba(19, 19, 19, 0.16);
+  border: 0.1rem solid rgba(19, 19, 19, 0.16);
+  background-color: rgba(19, 19, 19, 0.16);
   margin: 2.4rem 0; }
 
 @media only screen and (max-width: 768px) {
@@ -340,8 +341,11 @@ nav.menu .fa-bars {
     #footer .privacy-and-terms li:first-child {
       margin-right: unset; } }
 
+main {
+  background-color: #f6f7f9; }
+
 #banner {
-  background-color: #F6F7F9; }
+  background-color: #f6f7f9; }
   #banner .banner-item {
     overflow: hidden;
     box-sizing: border-box;
@@ -386,14 +390,75 @@ nav.menu .fa-bars {
       left: 0px;
       z-index: 1; }
   #banner .banner-item.one {
-    background-color: #54A6FF; }
+    background-color: #54a6ff; }
   #banner .banner-item.two {
-    background-color: #3563E9; }
+    background-color: #3563e9; }
     #banner .banner-item.two button {
-      background-color: #54A6FF; }
+      background-color: #54a6ff; }
+
+.card-component, .card {
+  padding: 2.4rem;
+  background-color: #ffffff;
+  border-radius: 10px; }
+  .card-component .car-name, .card .car-name {
+    font-size: 2rem;
+    font-weight: 700; }
+  .card-component .like .fa-heart, .card .like .fa-heart {
+    font-size: 2rem;
+    cursor: pointer; }
+    .card-component .like .fa-heart.active, .card .like .fa-heart.active {
+      color: red; }
+  .card-component .car-model, .card .car-model {
+    font-size: 1.4rem;
+    color: #90a3bf;
+    font-weight: 700; }
+  .card-component .car-img, .card .car-img {
+    padding: 8rem 1.2rem; }
+    .card-component .car-img img, .card .car-img img {
+      width: 100%; }
+  .card-component .parameters, .card .parameters {
+    margin-bottom: 2.6rem; }
+    .card-component .parameters span, .card .parameters span {
+      font-size: 1.2rem;
+      color: #90a3bf;
+      margin-left: 0.6rem; }
+    .card-component .parameters img, .card .parameters img {
+      width: 2rem; }
+  .card-component .price, .card .price {
+    font-size: 2rem;
+    font-weight: 700; }
+    .card-component .price span, .card .price span {
+      font-size: 1.4rem;
+      color: #90a3bf; }
+  .card-component .discount, .card .discount {
+    color: #90a3bf;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+    text-decoration: line-through; }
+
+.cars-category .heading {
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cars-category .heading .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #90a3bf;
+    margin-left: 2rem; }
+  .cars-category .heading .view-all {
+    color: #3563e9;
+    font-size: 1.6rem;
+    font-weight: 600; }
+
+.car-count {
+  font-size: 14px;
+  color: #90a3bf;
+  font-weight: 500; }
 
 main {
-  background-color: #F6F7F9;
+  background-color: #f6f7f9;
   padding: 32px 0px 64px; }
 
 .prime-btn {
@@ -404,15 +469,16 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3563E9;
-  color: #FFFFFF;
+  background-color: #3563e9;
+  color: #ffffff;
+  cursor: pointer;
   border: none;
   border-radius: 0.4rem;
   padding: 1rem 2rem;
   gap: 0.8rem;
   font-weight: 600; }
   .prime-btn:hover {
-    background-color: #1A37A7; }
+    background-color: #1a37a7; }
 
 .rent_now-btn {
   font-size: 16px;
@@ -422,15 +488,16 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3563E9;
-  color: #FFFFFF;
+  background-color: #3563e9;
+  color: #ffffff;
+  cursor: pointer;
   border: none;
   border-radius: 0.4rem;
   padding: 1rem 2rem;
   gap: 0.8rem;
   font-weight: 700; }
   .rent_now-btn:hover {
-    background-color: #1A37A7; }
+    background-color: #1a37a7; }
   @media (max-width: 768px) {
     .rent_now-btn {
       font-size: 12px;
@@ -444,10 +511,11 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3563E9;
-  color: #FFFFFF;
+  background-color: #3563e9;
+  color: #ffffff;
+  cursor: pointer;
   border: none;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 1rem rgba(16, 50, 147, 0.32); }
   .bg_btn:hover {
-    background-color: #1A37A7; }
+    background-color: #1a37a7; }

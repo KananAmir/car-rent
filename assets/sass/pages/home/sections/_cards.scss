@@ -1,0 +1,26 @@
+@import "./assets/sass/components/cards";
+.cars-category {
+    .heading {
+        margin: 3rem 0 2rem;
+        @include flexCenter(space-between, center);
+        .title {
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: $gray;
+            margin-left: 2rem;
+        }
+        .view-all {
+            color: $primary_color;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+}
+.card {
+    @extend .card-component;
+}
+.car-count {
+    font-size: 14px;
+    color: $gray;
+    font-weight: 500;
+}
