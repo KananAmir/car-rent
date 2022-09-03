@@ -194,6 +194,9 @@ nav.desktop {
       line-height: 150%;
       margin-right: 64px;
       color: #3563E9; }
+      @media (max-width: 992px) {
+        nav.desktop .left h3 {
+          margin-right: 30px; } }
     nav.desktop .left form {
       position: relative; }
       nav.desktop .left form input {
@@ -206,6 +209,9 @@ nav.desktop {
         padding: 12px;
         padding-left: 40px;
         width: 492px; }
+        @media (max-width: 992px) {
+          nav.desktop .left form input {
+            width: 300px; } }
       nav.desktop .left form i {
         font-size: 20px;
         position: absolute; }
@@ -337,26 +343,58 @@ nav.menu .fa-bars {
 #banner {
   background-color: #F6F7F9; }
   #banner .banner-item {
+    overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    background-color: #54A6FF;
     border-radius: 10px;
-    width: 640px;
-    height: 360px; }
+    width: 100%;
+    height: 360px;
+    padding: 24px; }
+    @media (max-width: 992px) {
+      #banner .banner-item {
+        margin-bottom: 10px; } }
+    @media (max-width: 768px) {
+      #banner .banner-item {
+        height: 232px; } }
     #banner .banner-item h3 {
       font-weight: 600;
       font-size: 32px;
       line-height: 150%;
-      color: white; }
+      color: white;
+      margin-bottom: 16px;
+      max-width: 300px; }
+      @media (max-width: 768px) {
+        #banner .banner-item h3 {
+          font-size: 16px; } }
     #banner .banner-item p {
       font-weight: 500;
       font-size: 16px;
       line-height: 150%;
-      color: white; }
+      color: white;
+      margin-bottom: 30px;
+      max-width: 284px; }
+      @media (max-width: 768px) {
+        #banner .banner-item p {
+          font-size: 12px; } }
+    #banner .banner-item button {
+      z-index: 2;
+      position: absolute; }
     #banner .banner-item img {
+      width: 100%;
       position: absolute;
       bottom: 0px;
-      left: 0px; }
+      left: 0px;
+      z-index: 1; }
+  #banner .banner-item.one {
+    background-color: #54A6FF; }
+  #banner .banner-item.two {
+    background-color: #3563E9; }
+    #banner .banner-item.two button {
+      background-color: #54A6FF; }
+
+main {
+  background-color: #F6F7F9;
+  padding: 32px 0px 64px; }
 
 .prime-btn {
   font-size: 16px;
@@ -393,6 +431,10 @@ nav.menu .fa-bars {
   font-weight: 700; }
   .rent_now-btn:hover {
     background-color: #1A37A7; }
+  @media (max-width: 768px) {
+    .rent_now-btn {
+      font-size: 12px;
+      padding: .5rem 1rem; } }
 
 .bg_btn {
   font-size: 16px;

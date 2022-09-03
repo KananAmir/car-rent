@@ -13,6 +13,9 @@ nav.desktop {
       font-size: 32px;
       line-height: 150%;
       margin-right: 64px;
+      @include for-tablet-landscape-up{
+        margin-right: 30px;
+      }
       color: $primary_color;
     }
     form {
@@ -27,6 +30,9 @@ nav.desktop {
         padding: 12px;
         padding-left: 40px;
         width: 492px;
+        @include for-tablet-landscape-up{
+          width: 300px;
+        }
       }
       i {
         font-size: 20px;
