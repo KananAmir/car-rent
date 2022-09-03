@@ -226,3 +226,106 @@ h6 {
   box-shadow: 0.2rem 0.2rem 1rem rgba(16, 50, 147, 0.32); }
   .bg_btn:hover {
     background-color: #1A37A7; }
+nav.desktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px; }
+  @media (max-width: 768px) {
+    nav.desktop {
+      display: none; } }
+  nav.desktop .left {
+    display: flex;
+    align-items: center; }
+    nav.desktop .left h3 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      margin-right: 64px;
+      color: #3563E9; }
+    nav.desktop .left form {
+      position: relative; }
+      nav.desktop .left form input {
+        box-sizing: border-box;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 70px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        padding: 12px;
+        padding-left: 40px;
+        width: 492px; }
+      nav.desktop .left form i {
+        font-size: 20px;
+        position: absolute; }
+      nav.desktop .left form .fa-magnifying-glass {
+        top: 13px;
+        left: 15px; }
+      nav.desktop .left form .fa-sliders {
+        top: 13px;
+        right: 20px; }
+  nav.desktop .right {
+    display: flex;
+    align-items: center; }
+    nav.desktop .right i {
+      padding: 10px;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 50%;
+      font-size: 20px;
+      margin-right: 20px; }
+
+nav.mobile {
+  display: none;
+  padding: 32px 24px; }
+  @media (max-width: 768px) {
+    nav.mobile {
+      display: block; } }
+  nav.mobile i {
+    font-size: 20px; }
+  nav.mobile .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    nav.mobile .heading h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      color: #3563E9; }
+    nav.mobile .heading img {
+      width: 28px;
+      height: 28px; }
+  nav.mobile form {
+    position: relative;
+    margin-top: 32px;
+    display: flex;
+    align-items: center; }
+    nav.mobile form input {
+      box-sizing: border-box;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      padding: 12px;
+      padding-left: 40px;
+      width: 99%; }
+    nav.mobile form .fa-magnifying-glass {
+      position: absolute;
+      top: 13px;
+      left: 15px; }
+    nav.mobile form .fa-sliders {
+      padding: 12px;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 10px;
+      margin-left: 16px; }
+
+nav.menu h3 {
+  order: 3;
+  width: 100%;
+  margin-top: 39px; }
+
+nav.menu img {
+  order: 2; }
+
+nav.menu .fa-bars {
+  order: 1; }
