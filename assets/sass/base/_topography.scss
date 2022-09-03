@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 80px;
+}
+h2 {
+    font-size: 56px;
+    line-height: 64px;
+}
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+}
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+h5 {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h4,
+    h5 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}

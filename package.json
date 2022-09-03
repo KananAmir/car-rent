@@ -1,0 +1,22 @@
+{
+  "name": "car-rent",
+  "version": "1.0.0",
+  "description": "- HTML, \r - CSS(SCSS),\r - Bootstrap,\r - JS(vanilla JS)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass assets/sass/main.scss -o assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KananAmir/car-rent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KananAmir/car-rent/issues"
+  },
+  "homepage": "https://github.com/KananAmir/car-rent#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
