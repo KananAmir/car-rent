@@ -8,6 +8,7 @@
     padding: 1rem 2rem;
     gap: 0.8rem;
     font-weight: 600;
+   
 }
 
 .rent_now-btn {
@@ -17,6 +18,10 @@
     padding: 1rem 2rem;
     gap: 0.8rem;
     font-weight: 700;
+    @include for-tablet-portrait-up{
+        font-size: 12px;
+        padding: .5rem 1rem;
+    }
 }
 
 .bg_btn {

@@ -1,1 +1,6 @@
-@import './sections/banner'
+@import './sections/banner';
+
+main{
+    background-color: $background_gray;
+    padding: 32px 0px 64px;
+}
