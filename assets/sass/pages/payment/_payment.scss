@@ -1,4 +1,16 @@
 main {
     background-color: $background_gray;
-    // padding: 32px;
+}
+
+#payment_right_col {
+    @media (max-width: 480px) {
+        display: none;  
+  }
+}
+
+#payment_right_col_mobile {
+    display: none;
+    @media (max-width: 480px) {
+        display: initial;  
+  }
 }
