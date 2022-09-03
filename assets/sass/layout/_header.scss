@@ -1,0 +1,126 @@
+nav.desktop {
+  display: flex;
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+  justify-content: space-between;
+  padding: 40px;
+  .left {
+    display: flex;
+    align-items: center;
+    h3 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      margin-right: 64px;
+      color: $primary_color;
+    }
+    form {
+      position: relative;
+      input {
+        box-sizing: border-box;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 70px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        padding: 12px;
+        padding-left: 40px;
+        width: 492px;
+      }
+      i {
+        font-size: 20px;
+        position: absolute;
+      }
+      .fa-magnifying-glass {
+        top: 13px;
+        left: 15px;
+      }
+      .fa-sliders {
+        top: 13px;
+        right: 20px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    i {
+      padding: 10px;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 50%;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+nav.mobile {
+  display: none;
+  @include for-tablet-portrait-up {
+    display: block;
+  }
+  padding: 32px 24px;
+  i {
+    font-size: 20px;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      color: $primary_color;
+    }
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  form {
+    position: relative;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    input {
+      box-sizing: border-box;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      padding: 12px;
+      padding-left: 40px;
+      width: 99%;
+    }
+
+    .fa-magnifying-glass {
+      position: absolute;
+      top: 13px;
+      left: 15px;
+    }
+    .fa-sliders {
+      padding: 12px;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 10px;
+      margin-left: 16px;
+    }
+  }
+}
+
+nav.menu {
+  h3 {
+    order: 3;
+    width: 100%;
+    margin-top: 39px;
+  }
+  img {
+    order: 2;
+  }
+  .fa-bars {
+    order: 1;
+  }
+}
