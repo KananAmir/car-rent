@@ -3,14 +3,14 @@ main {
 }
 
 #payment_right_col {
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         display: none;  
   }
 }
 
 #payment_right_col_mobile {
     display: none;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         display: initial;  
   }
 }
