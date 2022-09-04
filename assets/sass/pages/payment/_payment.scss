@@ -2,17 +2,27 @@ main {
     background-color: $background_gray;
 }
 
+.leftcolumn {
+    padding-inline-end: 2rem;
+    @media (max-width: 991px) {
+        padding: 0 !important;
+        margin-top:2rem ; 
+    }
+}
+
 #payment_right_col {
+    padding-inline-start: 2rem;
     @media (max-width: 991px) {
         display: none;  
-  }
+    }
 }
 
 #payment_right_col_mobile {
     display: none;
     @media (max-width: 991px) {
-        display: initial;  
-  }
+        display: initial; 
+        padding: 0; 
+    }
 }
 
 .rental_summary {
@@ -126,4 +136,48 @@ main {
     font-weight: 700;
     line-height: 4rem;
     color: $text_black;
+}
+
+.stepRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    border-radius: 10px;
+    padding: 24px;
+    background-color: $white_primary;
+}
+
+.spetInfo {
+    width: 100%;
+    display: inline-flex;    
+    justify-content: space-between;
+   
+}
+
+.billing_info_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.billing_input_label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: $text_black;
+    margin: 1rem 0;
+}
+
+.stepInputs {
+    @media (max-width: 991px) {
+        display: none;  
+    }
+}
+
+.stepMobileInputs {
+    display: none;
+    @media (max-width: 991px) {
+        display: initial;  
+    }
 }
