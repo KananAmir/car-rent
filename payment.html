@@ -283,40 +283,89 @@
               </div>
               <!-- +++++++++++++++++mobile -->
               <div class="row stepMobileInputs">
-                <div class="col billing_info_input">
-                  <h6 class="billing_input_label">Locations</h6>
-                  <input type="select" placeholder="Select your city" class="billing_input-select">
-                  <img class="select-arrow" src="./assets/svg/Vector.svg" alt="arrow">
-                </div>
-                <div class="col billing_info_input">
-                  <h6 class="billing_input_label">Date</h6>
-                  <input type="select" placeholder="Select your date" class="billing_input-select">
-                  <img class="select-arrow" src="./assets/svg/Vector.svg" alt="arrow">
-                </div>
-                <div class="col billing_info_input">
-                  <h6 class="billing_input_label">Time</h6>
-                  <input type="select" placeholder="Select your time" class="billing_input-select">
-                  <img class="select-arrow" src="./assets/svg/Vector.svg" alt="arrow">
-                </div>
-                <div class="col billing_info_input rental_radio">
-                  <input type="radio" name="rental-info" class="payment-radio">
-                  <h6 class="billing_input_label">Drop - Off</h6>
-                </div>
-                <div class="col billing_info_input">
-                  <h6 class="billing_input_label">Locations</h6>
-                  <input type="select" placeholder="Select your city" class="billing_input-select">
-                  <img class="select-arrow" src="./assets/svg/Vector.svg" alt="arrow">
-                </div>
-                <div class="col billing_info_input">
-                  <h6 class="billing_input_label">Date</h6>
-                  <input type="select" placeholder="Select your date" class="billing_input-select">
-                  <img class="select-arrow" src="./assets/svg/Vector.svg" alt="arrow">
-                </div>
-                <div class="col billing_info_input">
-                  <h6 class="billing_input_label">Time</h6>
-                  <input type="select" placeholder="Select your time" class="billing_input-select">
-                  <img class="select-arrow" src="./assets/svg/Vector.svg" alt="arrow">
-                </div>
+                <div class="payment_white_background">
+                  <div class="col-12 pick_payment-method">
+                    <div class="col billing_info_input rental_radio">
+                      <input type="radio" name="payment_methods" value="card" class="payment-radio pick_method">
+                      <h6 class="billing_input_label">Credit Card</h6>
+                      <img class="payment_logo" src="./assets/svg/Visa.svg" alt="visa">
+                    </div>
+                  </div>
+                  <div class="col-12 payment_method_content" id="card">
+                    <div class="row stepMobileInputs">
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Card Number</h6>
+                        <input type="text" placeholder="Card number" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Expration Date</h6>
+                        <input type="text" placeholder="DD / MM / YY" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Card Holder</h6>
+                        <input type="text" placeholder="Card holder" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">CVC</h6>
+                        <input type="text" placeholder="CVC" class="payment-input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pick_payment-method">
+                    <div class="col billing_info_input rental_radio">
+                      <input type="radio" name="payment_methods" value="paypal" class="payment-radio pick_method">
+                      <h6 class="billing_input_label">PayPal</h6>
+                      <img class="payment_logo" src="./assets/svg/PayPal.svg" alt="paypal">
+                    </div>
+                  </div>
+                  <div class="col-12 payment_method_content" id="paypal">
+                    <div class="row stepMobileInputs">
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Card Number</h6>
+                        <input type="text" placeholder="Card number" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Expration Date</h6>
+                        <input type="text" placeholder="DD / MM / YY" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Card Holder</h6>
+                        <input type="text" placeholder="Card holder" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">CVC</h6>
+                        <input type="text" placeholder="CVC" class="payment-input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pick_payment-method">
+                    <div class="col billing_info_input rental_radio">
+                      <input type="radio" name="payment_methods" value="bitcoin" class="payment-radio pick_method">
+                      <h6 class="billing_input_label">Bitcoin</h6>
+                      <img class="payment_logo" src="./assets/svg/Bitcoin.svg" alt="Bitcoin">
+                    </div>
+                  </div>
+                  <div class="col-12 payment_method_content" id="bitcoin">
+                    <div class="row stepMobileInputs">
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Card Number</h6>
+                        <input type="text" placeholder="Card number" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Expration Date</h6>
+                        <input type="text" placeholder="DD / MM / YY" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">Card Holder</h6>
+                        <input type="text" placeholder="Card holder" class="payment-input">
+                      </div>
+                      <div class="col billing_info_input">
+                        <h6 class="billing_input_label">CVC</h6>
+                        <input type="text" placeholder="CVC" class="payment-input">
+                      </div>
+                    </div>
+                  </div>
+                </div>                
               </div>
             </div>
             <!-- Step4---------------------- -->
