@@ -342,14 +342,14 @@ nav.menu .fa-bars {
       margin-right: unset; } }
 
 main {
-  background-color: #F6F7F9; }
+  background-color: #f6f7f9; }
 
 #sidebar {
   display: none;
   box-sizing: border-box;
   padding: 32px 34px;
   padding-top: 32px;
-  border-top: 1px solid #F6F7F9;
+  border-top: 1px solid #f6f7f9;
   position: absolute;
   background-color: white;
   height: 100vh; }
@@ -357,7 +357,7 @@ main {
     #sidebar {
       display: block; } }
   #sidebar span {
-    color: #90A3BF; }
+    color: #90a3bf; }
   #sidebar label {
     font-weight: 600;
     font-size: 20px;
@@ -368,6 +368,52 @@ main {
 
 #details {
   height: 100vh; }
+
+#reviews {
+  padding: 2.4rem; }
+  #reviews p {
+    color: #1a202c;
+    font-size: 2rem;
+    font-weight: 600; }
+  #reviews .review-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #3563e9;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-left: 1.2rem; }
+  #reviews .reviewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.6rem; }
+    #reviews .reviewer p {
+      font-size: 2rem;
+      color: #1a202c;
+      font-weight: 700;
+      margin-bottom: 1.2rem; }
+    #reviews .reviewer span {
+      font-size: 1.4rem;
+      color: #90a3bf; }
+  #reviews .ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #reviews .ranking .date {
+      color: #90a3bf;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: right; }
+  #reviews .content p {
+    color: #596780;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    margin-top: 1.2rem; }
+  #reviews span {
+    color: #90a3bf;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 1.2rem; }
 
 #banner {
   background-color: #f6f7f9; }
@@ -419,7 +465,7 @@ main {
   #banner .banner-item.two {
     background-color: #3563e9; }
     #banner .banner-item.two button {
-      background-color: #54A6FF; }
+      background-color: #54a6ff; }
   #banner .selections-wrapper {
     padding-top: 32px;
     position: relative; }
@@ -460,10 +506,71 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      background-color: #3563E9;
+      background-color: #3563e9;
       font-size: 20px;
       padding: 15px;
       border-radius: 10px; }
+
+.card-component, .card {
+  padding: 2.4rem;
+  background-color: #ffffff;
+  border-radius: 10px; }
+  .card-component .car-name, .card .car-name {
+    font-size: 2rem;
+    font-weight: 700; }
+  .card-component .like .fa-heart, .card .like .fa-heart {
+    font-size: 2rem;
+    cursor: pointer; }
+    .card-component .like .fa-heart.fa-solid, .card .like .fa-heart.fa-solid {
+      color: red; }
+  .card-component .car-model, .card .car-model {
+    font-size: 1.4rem;
+    color: #90a3bf;
+    font-weight: 700; }
+  .card-component .car-img, .card .car-img {
+    padding: 6rem 1.2rem 4rem; }
+    .card-component .car-img img, .card .car-img img {
+      width: 100%; }
+  .card-component .parameters, .card .parameters {
+    margin-bottom: 2.6rem; }
+    .card-component .parameters span, .card .parameters span {
+      font-size: 1.2rem;
+      color: #90a3bf;
+      margin-left: 0.6rem; }
+    .card-component .parameters img, .card .parameters img {
+      width: 2rem; }
+  .card-component .price, .card .price {
+    font-size: 2rem;
+    font-weight: 700; }
+    .card-component .price span, .card .price span {
+      font-size: 1.4rem;
+      color: #90a3bf; }
+  .card-component .discount, .card .discount {
+    color: #90a3bf;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+    text-decoration: line-through; }
+
+.cars-category .heading {
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cars-category .heading .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #90a3bf;
+    margin-left: 2rem; }
+  .cars-category .heading .view-all {
+    color: #3563e9;
+    font-size: 1.6rem;
+    font-weight: 600; }
+
+.car-count {
+  font-size: 14px;
+  color: #90a3bf;
+  font-weight: 500; }
 
 main {
   background-color: #f6f7f9;
