@@ -1,5 +1,8 @@
 #reviews {
     padding: 2.4rem;
+    background-color: $white_primary;
+    margin-top: 3.2rem;
+    border-radius: 10px;
     p {
         color: $text_black;
         font-size: 2rem;
@@ -52,6 +55,6 @@
         color: $gray;
         font-size: 1.6rem;
         font-weight: 600;
-        margin-left: 1.2rem;
+        cursor: pointer;
     }
 }

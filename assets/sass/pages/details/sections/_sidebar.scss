@@ -1,15 +1,13 @@
 #sidebar {
-  display: none;
+  display: block;
   @include for-tablet-portrait-up {
-    display: block;
+    display: none;
   }
   box-sizing: border-box;
-  padding: 32px 34px;
-  padding-top: 32px;
+  padding: 32px 30px 150px;
   border-top: 1px solid $background_gray;
   position: absolute;
   background-color: white;
-  height: 100vh;
   span {
     color: $span-colors;
   }
@@ -20,9 +18,6 @@
     color: $secondary-text;
   }
   .range {
-    width: 260px;
+    width: 200px;
   }
-}
-#details {
-  height: 100vh;
 }
