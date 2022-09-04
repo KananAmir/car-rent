@@ -16,9 +16,12 @@ main {
 }
 
 .rental_summary {
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     background-color: $white_primary;
     padding: 2.4rem;
+    row-gap: 2.4rem;
 }
 
 .rental-summary_header {
@@ -36,11 +39,16 @@ main {
 }
 
 .car_name {
+    width: 100%;
     display: flex;
     column-gap: 1.5rem;
     justify-content: flex-start;
     border-bottom: 0.1rem solid $border-bottom;
     padding-bottom: 2.5rem;
+}
+
+.car_name_img {
+    width: 45%;
 }
 
 .numeric_info {
@@ -83,4 +91,39 @@ main {
     left: 74%;
     bottom: 4rem;
     cursor: pointer;
+    @media (max-width: 1200px) {
+        left: 64%; 
+  }
+}
+
+#apply_button_mobile {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: $text_black;
+    position: relative;
+    left: 80%;
+    bottom: 4rem;
+    cursor: pointer;
+    @media (max-width: 490px) {
+        font-size: 1.35rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 1.1rem;
+    }
+    @media (max-width: 400px) { 
+        font-size: 0.9rem;
+    }
+}
+
+.rental-summary_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-price {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    color: $text_black;
 }
