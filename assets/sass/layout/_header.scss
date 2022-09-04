@@ -1,3 +1,4 @@
+
 nav.desktop {
   display: flex;
   @include for-tablet-portrait-up {
@@ -13,6 +14,7 @@ nav.desktop {
       font-size: 32px;
       line-height: 150%;
       margin-right: 64px;
+      cursor: pointer;
       @include for-tablet-landscape-up{
         margin-right: 30px;
       }

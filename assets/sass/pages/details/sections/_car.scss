@@ -1,0 +1,141 @@
+#details {
+  box-sizing: border-box;
+  .details-wrapper{
+    padding-left: 200px;
+    @include for-tablet-portrait-up {
+      padding: 20px 0;
+    }
+  }
+  #car {
+    #main-image {
+      background-color: $primary_color;
+      overflow: hidden;
+      box-sizing: border-box;
+      position: relative;
+      border-radius: 10px;
+      width: 100%;
+      height: 360px;
+      padding: 24px;
+      margin-bottom: 24px;
+      @include for-tablet-landscape-up {
+        margin-bottom: 10px;
+      }
+      @include for-tablet-portrait-up {
+        height: 232px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 150%;
+        color: white;
+        margin-bottom: 16px;
+        margin-left: 0;
+        @include for-tablet-portrait-up {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: white;
+        margin-bottom: 30px;
+        max-width: 284px;
+        @include for-tablet-portrait-up {
+          font-size: 12px;
+        }
+      }
+      img {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+    }
+    .image-wrapper {
+      border: 2px solid $primary_color;
+      border-radius: 10px;
+      padding: 8px;
+      .image {
+        background-color: $primary_color;
+        border-radius: 10px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .price {
+      p {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+      }
+      span {
+        font-size: 1.4rem;
+        color: $gray;
+      }
+      .discount {
+        text-decoration: line-through;
+      }
+    }
+    .info {
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+      padding: 24px;
+      @include for-tablet-portrait-up {
+        margin-top: 20px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        display: inline-block;
+        margin-bottom: 13px;
+      }
+      .fa-heart {
+        font-size: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: red;
+      }
+      .rating {
+        margin-bottom: 34px;
+        i {
+          font-size: 15px;
+        }
+        .fa-solid {
+          color: $yellow;
+        }
+        i:last-of-type {
+          margin-right: 10px;
+        }
+        span {
+          font-size: 15px;
+          color: $secondary-text;
+        }
+      }
+      .info-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 200%;
+        color: $secondary-text;
+        margin-bottom: 34px;
+      }
+      .details {
+        margin-bottom: 36px;
+        span {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: $secondary-text;
+        }
+        span.category{
+          color: $span-colors;
+        }
+      }
+    }
+  }
+}

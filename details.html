@@ -21,100 +21,572 @@
 </head>
 
 <body>
-  <div class="container container-fluid">
-    <header>
-      <nav class="desktop">
-        <div class="left">
-          <h3>MORENT</h3>
-          <form action="">
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search something here" />
-            <i class="fa-solid fa-sliders"></i>
-          </form>
-        </div>
-        <div class="right">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-bell"></i>
-          <i class="fa-solid fa-gear"></i>
-          <img src="./assets/media/profilePic.png" alt="" />
-        </div>
-      </nav>
-      <nav class="mobile menu">
-        <div class="heading ">
-          <i class="fa-solid fa-bars"></i>
-          <h3>MORENT</h3>
-          <img src="./assets/media/profilePic.png" alt="" />
-        </div>
+  <header class="container container-fluid">
+    <nav class="desktop">
+      <div class="left">
+        <h3>MORENT</h3>
         <form action="">
           <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search something here" />
           <i class="fa-solid fa-sliders"></i>
         </form>
-      </nav>
-    </header>
-
-    <footer id="footer">
-      <div class="row pt-5">
-        <div class="col col-12 col-md-6 mb-5">
-          <h1 class="title">MORENT</h1>
-          <p class="description">
-            Our vision is to provide convenience and help increase your sales business.
-          </p>
-        </div>
-        <div class="col col-12 col-md-6 ">
-          <div class="row">
-            <div class="col col-6 col-md-4 mb-5 mb-md-0">
-              <h5 class="nav-title">About</h5>
-              <nav>
-                <ul>
-                  <li><a href="#">How it works</a></li>
-                  <li><a href="#">Featured</a></li>
-                  <li><a href="#">Partnership</a></li>
-                  <li><a href="#">Bussiness Relation</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="col col-6 col-md-4 mb-5 mb-md-0">
-              <h5 class="nav-title">Community</h5>
-              <nav>
-                <ul>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Podcast</a></li>
-                  <li><a href="#">Invite a friend</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="col col-12 col-md-4 mb-5 mb-md-0">
-              <h5 class="nav-title">Socials</h5>
-              <nav>
-                <ul>
-                  <li><a href="#">How it works</a></li>
-                  <li><a href="#">Featured</a></li>
-                  <li><a href="#">Partnership</a></li>
-                  <li><a href="#">Bussiness Relation</a></li>
-                </ul>
-              </nav>
-            </div>
+      </div>
+      <div class="right">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-gear"></i>
+        <img src="./assets/media/profilePic.png" alt="" />
+      </div>
+    </nav>
+    <nav class="mobile menu">
+      <div class="heading">
+        <i class="fa-solid fa-bars"></i>
+        <h3>MORENT</h3>
+        <img src="./assets/media/profilePic.png" alt="" />
+      </div>
+      <form action="">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search something here" />
+        <i class="fa-solid fa-sliders"></i>
+      </form>
+    </nav>
+  </header>
+  <nav id="sidebar">
+    <div class="">
+      <div id="type" class="mb-5">
+        <span class="mb-4 d-inline-block">TYPE</span>
+        <div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> Sport <span>(10)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> SUV <span>(12)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> MPV <span>(16)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> Sedan <span>(20)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> Coupe <span>(14)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> Hatchback <span>(14)</span></label>
           </div>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col col-12 col-md-6 d-flex align-items-center">
-          <p class="copyright">©2022 MORENT. All rights reserved</p>
-        </div>
-        <div class="col col-12 col-md-6">
-          <nav>
-            <ul class="privacy-and-terms">
-              <li><a href="#">Privacy & Policy</a></li>
-              <li><a href="#">Terms & Condition</a></li>
-            </ul>
-          </nav>
+      <div id="capacity" class="mb-5">
+        <span class="mb-4 d-inline-block">CAPACITY</span>
+        <div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> 2 Person <span>(10)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> 4 Person <span>(12)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> 6 Person <span>(16)</span></label>
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" />
+            <label> 8 or More <span>(16)</span></label>
+          </div>
         </div>
       </div>
-    </footer>
-  </div>
+      <div id="price">
+        <span class="mb-4 d-inline-block">PRICE</span>
+        <div>
+          <div>
+            <input type="range" class="range" />
+            <label for="" class="d-block">Max. $100.00</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="details">
+    <div class="container container-fluid">
+      <div class="details-wrapper">
+        <section id="car">
+          <div class="row">
+            <div class="col-lg-6">
+              <div id="main-image">
+                <h3>Sports car with the best design and acceleration</h3>
+                <p>Safety and comfort while driving a
+                  futuristic and elegant sports car</p>
+                <img src="./assets/media/nissanGT-R.png" alt="">
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="image-wrapper">
+                    <div class="image">
+                      <img src="./assets/media/View1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img src="./assets/media/View2.png" alt="">
+                </div>
+                <div class="col-4">
+                  <img src="./assets/media/View3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info">
+                <h3>Nissan GT - R</h3>
+                <i class="far fa-heart"></i>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <span>440+ Reviewer</span>
+                </div>
+                <p class="info-text">NISMO has become the embodiment of Nissan's outstanding performance, inspired by the
+                  most unforgiving proving ground, the "race track".</p>
+                <div class="details">
+                  <div class="row">
+                    <div class="col-6 d-flex justify-content-between ">
+                      <span class="category">TypeCar</span>
+                      <span>Sport</span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between ">
+                      <span class="category">Capacity</span>
+                      <span>2Person</span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between ">
+                      <span class="category">Steering</span>
+                      <span>Manual</span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between ">
+                      <span class="category">Gasoline</span>
+                      <span>70L</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0 price">
+                    <p>$80.00/ <span>day</span></p>
+                    <span class="discount">$100.00</span>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="reviews">
+          <div class="d-flex">
+            <p>Reviews</p>
+            <span class="review-btn">13</span>
+          </div>
+          <div class="row my-5">
+            <div class="col col-12">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <img src="./assets/media/avatar-1.svg" alt="">
+                  <div class="reviewer">
+                    <p>Alex Stanton</p>
+                    <span>CEO at Bukalapak</span>
+                  </div>
+                </div>
+                <div class="ranking">
+                  <div class="date">21 July 2022</div>
+                  <div class="stars">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star_colorless.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p>We are very happy with the service from the MORENT App. Morent has a low price and also a
+                  large variety of cars with
+                  good and comfortable facilities. In addition, the service provided by the officers is also very friendly
+                  and
+                  very
+                  polite.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col col-12">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/media/avatar-2.svg" alt="">
+                  <div class="reviewer">
+                    <p>Skylar Dias</p>
+                    <span>CEO at Amazon</span>
+                  </div>
+                </div>
+                <div class="ranking">
+                  <div class="date">20 July 2022</div>
+                  <div class="stars">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star.svg" alt="">
+                    <img src="./assets/media/icons/star_colorless.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide
+                  variety of cars
+                  with good and comfortable facilities. In addition, the service provided by the officers is also very
+                  friendly and very
+                  polite.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col col-12 d-flex justify-content-center">
+              <span>View All <i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+            </div>
+          </div>
+        </section>
+  
+        <!-- RECENT CAR SECTION -->
+        <section id="popular-cars" class="cars-category">
+          <div class="heading">
+            <div>
+              <h2 class="title">Popular Car</h2>
+            </div>
+            <div class="">
+              <a class="view-all" href="#">View All</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12 col-md-6 col-lg-4 my-4">
+              <div class="card">
+                <div class="row">
+                  <div class="col col-12 d-flex justify-content-between p-0">
+                    <p class="car-name mb-3">Koenigsegg</p>
+                    <div class="like">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <span class="car-model p-0">Sport</span>
+                </div>
+                <div class="car-img">
+                  <img src="./assets/media/cars/car-1.svg" alt="car">
+                </div>
+                <div class="row parameters">
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/Vector.svg" alt="">
+                    <span>90L</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/car.svg" alt="">
+                    <span>Manual</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/user.svg" alt="">
+                    <span>2 People</span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0">
+                    <p class="price">$99.00/ <span>day</span></p>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 my-4">
+              <div class="card">
+                <div class="row">
+                  <div class="col col-12 d-flex justify-content-between p-0">
+                    <p class="car-name mb-3">Nissan GT-R</p>
+                    <div class="like">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <span class="car-model p-0">Sport</span>
+                </div>
+                <div class="car-img">
+                  <img src="./assets/media/cars/car-2.svg" alt="car">
+                </div>
+                <div class="row parameters">
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/Vector.svg" alt="">
+                    <span>80L</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/car.svg" alt="">
+                    <span>Manual</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/user.svg" alt="">
+                    <span>2 People</span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0">
+                    <p class="price">$99.00/ <span>day</span></p>
+                    <p class="discount">$100.00</p>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 my-4">
+              <div class="card">
+                <div class="row">
+                  <div class="col col-12 d-flex justify-content-between p-0">
+                    <p class="car-name mb-3">Rolls-Royce</p>
+                    <div class="like">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <span class="car-model p-0">Sedan</span>
+                </div>
+                <div class="car-img">
+                  <img src="./assets/media/cars/car-3.svg" alt="car">
+                </div>
+                <div class="row parameters">
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/Vector.svg" alt="">
+                    <span>70L</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/car.svg" alt="">
+                    <span>Manual</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/user.svg" alt="">
+                    <span>4 People</span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0">
+                    <p class="price">$96.00/ <span>day</span></p>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- RECOMMENDATION CARS SECTION -->
+        <section id="recommendatin-cars" class="cars-category">
+          <div class="heading">
+            <div class="">
+              <h2 class="title">Recomendation Car</h2>
+            </div>
+            <div class="">
+              <a class="view-all" href="#">View All</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12 col-md-6 col-lg-4 my-4">
+              <div class="card">
+                <div class="row">
+                  <div class="col col-12 d-flex justify-content-between p-0">
+                    <p class="car-name mb-3">All New Rush</p>
+                    <div class="like">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <span class="car-model p-0">Suv</span>
+                </div>
+                <div class="car-img">
+                  <img src="./assets/media/cars/car-5.svg" alt="car">
+                </div>
+                <div class="row parameters">
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/Vector.svg" alt="">
+                    <span>70L</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/car.svg" alt="">
+                    <span>Manual</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/user.svg" alt="">
+                    <span>6 People</span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0">
+                    <p class="price">$72.00/ <span>day</span></p>
+                    <p class="discount">$80.00</p>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 my-4">
+              <div class="card">
+                <div class="row">
+                  <div class="col col-12 d-flex justify-content-between p-0">
+                    <p class="car-name mb-3">CR-V</p>
+                    <div class="like">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <span class="car-model p-0">Suv</span>
+                </div>
+                <div class="car-img">
+                  <img src="./assets/media/cars/car-6.svg" alt="car">
+                </div>
+                <div class="row parameters">
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/Vector.svg" alt="">
+                    <span>80L</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/car.svg" alt="">
+                    <span>Manual</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/user.svg" alt="">
+                    <span>6 People</span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0">
+                    <p class="price">$80.00/ <span>day</span></p>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 my-4">
+              <div class="card">
+                <div class="row">
+                  <div class="col col-12 d-flex justify-content-between p-0">
+                    <p class="car-name mb-3">All New Terios</p>
+                    <div class="like">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <span class="car-model p-0">Suv</span>
+                </div>
+                <div class="car-img">
+                  <img src="./assets/media/cars/car-7.svg" alt="car">
+                </div>
+                <div class="row parameters">
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/Vector.svg" alt="">
+                    <span>90L</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/car.svg" alt="">
+                    <span>Manual</span>
+                  </div>
+                  <div class="col col-4 p-0 d-flex align-items-center">
+                    <img src="./assets/media/icons/user.svg" alt="">
+                    <span>6 People</span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col col-5 p-0">
+                    <p class="price">$74.00/ <span>day</span></p>
+                  </div>
+                  <div class="col col-7 p-0 d-flex justify-content-end">
+                    <button class="rent_now-btn">Rental Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="container container-fluid position-absolute">
+    <div class="row pt-5">
+      <div class="col col-12 col-md-6 mb-5">
+        <h1 class="title">MORENT</h1>
+        <p class="description">
+          Our vision is to provide convenience and help increase your sales
+          business.
+        </p>
+      </div>
+      <div class="col col-12 col-md-6">
+        <div class="row">
+          <div class="col col-6 col-md-4 mb-5 mb-md-0">
+            <h5 class="nav-title">About</h5>
+            <nav>
+              <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Partnership</a></li>
+                <li><a href="#">Bussiness Relation</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col col-6 col-md-4 mb-5 mb-md-0">
+            <h5 class="nav-title">Community</h5>
+            <nav>
+              <ul>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Invite a friend</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col col-12 col-md-4 mb-5 mb-md-0">
+            <h5 class="nav-title">Socials</h5>
+            <nav>
+              <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Partnership</a></li>
+                <li><a href="#">Bussiness Relation</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col col-12 col-md-6 d-flex align-items-center">
+        <p class="copyright">©2022 MORENT. All rights reserved</p>
+      </div>
+      <div class="col col-12 col-md-6">
+        <nav>
+          <ul class="privacy-and-terms">
+            <li><a href="#">Privacy & Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

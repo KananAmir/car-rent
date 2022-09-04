@@ -1,0 +1,58 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.card-component {
+    padding: 2.4rem;
+    background-color: $white_primary;
+    border-radius: 10px;
+    .car-name {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .like {
+        .fa-heart {
+            font-size: 2rem;
+            cursor: pointer;
+            &.fa-solid {
+                color: red;
+            }
+        }
+    }
+    .car-model {
+        font-size: 1.4rem;
+        color: $gray;
+        font-weight: 700;
+    }
+    .car-img {
+        padding: 6rem 1.2rem 4rem;
+        img {
+            width: 100%;
+        }
+    }
+    .parameters {
+        margin-bottom: 2.6rem;
+        span {
+            font-size: 1.2rem;
+            color: $gray;
+            margin-left: 0.6rem;
+        }
+        img {
+            width: 2rem;
+        }
+    }
+    .price {
+        font-size: 2rem;
+        font-weight: 700;
+        span {
+            font-size: 1.4rem;
+            color: $gray;
+        }
+    }
+    .discount {
+        color: $gray;
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-top: 0.4rem;
+        text-decoration: line-through;
+    }
+}
