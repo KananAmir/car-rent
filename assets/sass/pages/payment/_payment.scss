@@ -144,8 +144,8 @@ main {
 }
 
 .step {
-    border-radius: 10px;
-    padding: 24px;
+    border-radius: 1rem;
+    padding: 2.4rem;
     background-color: $white_primary;
 }
 
@@ -204,4 +204,28 @@ main {
        position: absolute;
        left: 90%;
     }
+}
+
+.payment_white_background {
+    //padding: 2.4rem;
+    background-color: $white_primary;
+}
+
+.pick_payment-method {
+    border-radius: 1rem;
+    background-color: $background_gray;
+}
+
+.payment_logo {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 60%;
+    padding-right: 1rem;
+}
+
+.payment_method_content {
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: $background_gray;
+    display: none;
 }
