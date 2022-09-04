@@ -129,6 +129,9 @@ table {
 a {
   text-decoration: none; }
 
+input {
+  background-color: none; }
+
 html {
   font-size: 62.5%; }
 
@@ -194,7 +197,7 @@ nav.desktop {
       line-height: 150%;
       margin-right: 64px;
       cursor: pointer;
-      color: #3563e9; }
+      color: #3563E9; }
       @media (max-width: 992px) {
         nav.desktop .left h3 {
           margin-right: 30px; } }
@@ -249,7 +252,7 @@ nav.mobile {
       font-weight: 700;
       font-size: 24px;
       line-height: 120%;
-      color: #3563e9; }
+      color: #3563E9; }
     nav.mobile .heading img {
       width: 28px;
       height: 28px; }
@@ -293,7 +296,7 @@ nav.menu .fa-bars {
   font-size: 3.2rem;
   line-height: 4.8rem;
   margin-bottom: 1.6rem;
-  color: #3563e9;
+  color: #3563E9;
   cursor: pointer; }
 
 #footer .description {
@@ -344,7 +347,211 @@ nav.menu .fa-bars {
       margin-right: unset; } }
 
 main {
-  background-color: #f6f7f9; }
+  background-color: #F6F7F9; }
+
+.leftcolumn {
+  padding-inline-end: 2rem; }
+  @media (max-width: 991px) {
+    .leftcolumn {
+      padding: 0 !important;
+      margin-top: 2rem; } }
+
+#payment_right_col {
+  padding-inline-start: 2rem; }
+
+.rental_summary {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  padding: 2.4rem;
+  row-gap: 2.4rem; }
+
+.rental-summary_header {
+  color: #1A202C;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700; }
+
+.rental-summary_content {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  color: #90A3BF; }
+
+.car_name {
+  width: 100%;
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: flex-start;
+  border-bottom: 0.1rem solid rgba(195, 212, 233, 0.4);
+  padding-bottom: 2.5rem; }
+
+.car_name_img {
+  width: 45%; }
+
+.numeric_info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem; }
+
+.numbers {
+  display: flex;
+  justify-content: space-between; }
+
+.category {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #90A3BF; }
+
+.category_value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #1A202C; }
+
+.apply_promocode {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  position: relative; }
+
+#apply_button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #1A202C;
+  position: absolute;
+  left: 75%;
+  bottom: 4rem;
+  top: 27%;
+  cursor: pointer; }
+  @media (max-width: 490px) {
+    #apply_button {
+      font-size: 1.35rem; } }
+  @media (max-width: 400px) {
+    #apply_button {
+      font-size: 1.1rem; } }
+  @media (max-width: 400px) {
+    #apply_button {
+      font-size: 0.9rem; } }
+
+.rental-summary_footer {
+  display: flex;
+  justify-content: space-between; }
+
+.footer-price {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #1A202C; }
+
+.stepRow {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem; }
+
+.step {
+  border-radius: 1rem;
+  padding: 2.4rem;
+  background-color: #FFFFFF; }
+
+.spetInfo {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between; }
+
+.billing_info_input {
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 991px) {
+    .billing_info_input {
+      position: relative;
+      flex-direction: column; } }
+
+.billing_input_label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: #1A202C;
+  margin: 1rem 0; }
+
+@media (max-width: 991px) {
+  .stepInputs {
+    display: none; } }
+
+.stepMobileInputs {
+  display: none; }
+  @media (max-width: 991px) {
+    .stepMobileInputs {
+      display: initial; } }
+
+.rental_radio {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+
+.select-arrow {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  left: 90%;
+  bottom: 25%; }
+  @media (max-width: 991px) {
+    .select-arrow {
+      position: absolute;
+      left: 90%; } }
+
+.payment_white_background {
+  background-color: #FFFFFF; }
+
+.pick_payment-method {
+  border-radius: 1rem;
+  background-color: #F6F7F9; }
+
+.payment_logo {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 60%;
+  padding-right: 1rem; }
+
+.payment_method_content {
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  background-color: #F6F7F9;
+  display: none; }
+
+.confirmation_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 0 !important; }
+
+.confirmation_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0;
+  border-radius: 1rem;
+  background-color: #F6F7F9; }
+
+.checkBox-info {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #1A202C; }
+
+.confirmation_bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem; }
+
+.shield {
+  width: 3rem;
+  height: 3rem; }
 
 body {
   position: relative; }
@@ -354,7 +561,7 @@ body {
   display: block;
   box-sizing: border-box;
   padding: 32px 30px;
-  border-top: 1px solid #f6f7f9;
+  border-top: 1px solid #F6F7F9;
   position: absolute;
   background-color: white; }
   @media (max-width: 768px) {
@@ -382,7 +589,7 @@ footer {
       #details .details-wrapper {
         padding: 20px 0; } }
   #details #car #main-image {
-    background-color: #3563e9;
+    background-color: #3563E9;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
@@ -424,11 +631,11 @@ footer {
       left: 0px;
       z-index: 1; }
   #details #car .image-wrapper {
-    border: 2px solid #3563e9;
+    border: 2px solid #3563E9;
     border-radius: 10px;
     padding: 8px; }
     #details #car .image-wrapper .image {
-      background-color: #3563e9;
+      background-color: #3563E9;
       border-radius: 10px; }
   #details #car img {
     width: 100%; }
@@ -490,18 +697,18 @@ footer {
 
 #reviews {
   padding: 2.4rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   margin-top: 3.2rem;
   border-radius: 10px; }
   #reviews p {
-    color: #1a202c;
+    color: #1A202C;
     font-size: 2rem;
     font-weight: 600; }
   #reviews .review-btn {
     padding: 0.6rem 1.2rem;
-    background-color: #3563e9;
+    background-color: #3563E9;
     border-radius: 4px;
-    color: #ffffff;
+    color: #FFFFFF;
     margin-left: 1.2rem; }
   #reviews .reviewer {
     display: flex;
@@ -510,7 +717,7 @@ footer {
     margin-left: 1.6rem; }
     #reviews .reviewer p {
       font-size: 2rem;
-      color: #1a202c;
+      color: #1A202C;
       font-weight: 700;
       margin-bottom: 1.2rem; }
     #reviews .reviewer span {
@@ -538,7 +745,7 @@ footer {
     cursor: pointer; }
 
 #banner {
-  background-color: #f6f7f9; }
+  background-color: #F6F7F9; }
   #banner .banner-item {
     overflow: hidden;
     box-sizing: border-box;
@@ -583,11 +790,11 @@ footer {
       left: 0px;
       z-index: 1; }
   #banner .banner-item.one {
-    background-color: #54a6ff; }
+    background-color: #54A6FF; }
   #banner .banner-item.two {
-    background-color: #3563e9; }
+    background-color: #3563E9; }
     #banner .banner-item.two button {
-      background-color: #54a6ff; }
+      background-color: #54A6FF; }
   #banner .selections-wrapper {
     padding-top: 32px;
     position: relative; }
@@ -629,14 +836,14 @@ footer {
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      background-color: #3563e9;
+      background-color: #3563E9;
       font-size: 20px;
       padding: 15px;
       border-radius: 10px; }
 
 .card-component, .card {
   padding: 2.4rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 10px; }
   .card-component .car-name, .card .car-name {
     font-size: 2rem;
@@ -686,7 +893,7 @@ footer {
     color: #90a3bf;
     margin-left: 2rem; }
   .cars-category .heading .view-all {
-    color: #3563e9;
+    color: #3563E9;
     font-size: 1.6rem;
     font-weight: 600; }
 
@@ -695,8 +902,14 @@ footer {
   color: #90a3bf;
   font-weight: 500; }
 
+@media (max-width: 768px) {
+  .cars-category .popular-cars {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll; } }
+
 main {
-  background-color: #f6f7f9;
+  background-color: #F6F7F9;
   padding: 32px 0px 64px; }
 
 .prime-btn {
@@ -704,11 +917,12 @@ main {
   font-size: 1.6rem;
   line-height: 2.4rem;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3563e9;
-  color: #ffffff;
+  background-color: #3563E9;
+  color: #FFFFFF;
   cursor: pointer;
   border: none;
   border-radius: 0.4rem;
@@ -716,18 +930,19 @@ main {
   gap: 0.8rem;
   font-weight: 600; }
   .prime-btn:hover {
-    background-color: #1a37a7; }
+    background-color: #1A37A7; }
 
 .rent_now-btn {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 2.4rem;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3563e9;
-  color: #ffffff;
+  background-color: #3563E9;
+  color: #FFFFFF;
   cursor: pointer;
   border: none;
   border-radius: 0.4rem;
@@ -735,7 +950,7 @@ main {
   gap: 0.8rem;
   font-weight: 700; }
   .rent_now-btn:hover {
-    background-color: #1a37a7; }
+    background-color: #1A37A7; }
   @media (max-width: 768px) {
     .rent_now-btn {
       font-size: 12px;
@@ -746,14 +961,81 @@ main {
   font-size: 1.6rem;
   line-height: 2.4rem;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3563e9;
-  color: #ffffff;
+  background-color: #3563E9;
+  color: #FFFFFF;
   cursor: pointer;
   border: none;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 1rem rgba(16, 50, 147, 0.32); }
   .bg_btn:hover {
-    background-color: #1a37a7; }
+    background-color: #1A37A7; }
+
+.billing_input {
+  height: 5.6rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #90A3BF;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background-color: #F6F7F9; }
+
+::placeholder {
+  color: #90A3BF; }
+
+:-ms-input-placeholder {
+  color: #90A3BF; }
+
+:focus {
+  outline: none !important;
+  border: 1px solid #90A3BF;
+  box-shadow: 0 0 10px rgba(16, 50, 147, 0.32); }
+
+.payment-input {
+  height: 5.6rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  padding: 0 1rem;
+  color: #90A3BF;
+  border: none;
+  border-radius: 1rem; }
+
+.billing_input-select {
+  height: 5.6rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #90A3BF;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background-color: #F6F7F9; }
+
+::placeholder {
+  color: #90A3BF; }
+
+:-ms-input-placeholder {
+  color: #90A3BF; }
+
+:focus {
+  outline: none !important;
+  border: 1px solid #90A3BF;
+  box-shadow: 0 0 10px rgba(16, 50, 147, 0.32); }
+
+.payment-radio {
+  width: 3.5rem;
+  height: 2rem;
+  color: #90A3BF;
+  border: 1px solid #90A3BF;
+  accent-color: #3563E9; }
+
+.payment-chekbox {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  color: #90A3BF;
+  border: 1px solid #90A3BF;
+  accent-color: #3563E9; }
