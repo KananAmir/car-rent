@@ -902,6 +902,12 @@ footer {
   color: #90a3bf;
   font-weight: 500; }
 
+@media (max-width: 768px) {
+  .cars-category .popular-cars {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll; } }
+
 main {
   background-color: #F6F7F9;
   padding: 32px 0px 64px; }

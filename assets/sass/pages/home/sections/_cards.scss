@@ -24,3 +24,13 @@
     color: $gray;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .cars-category {
+        .popular-cars {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+    }
+}
