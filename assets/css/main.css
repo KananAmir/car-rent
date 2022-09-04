@@ -344,17 +344,16 @@ main {
   background-color: #F6F7F9; }
 
 #sidebar {
-  display: none;
+  display: block;
   box-sizing: border-box;
-  padding: 32px 34px;
-  padding-top: 32px;
+  padding: 32px 30px;
   border-top: 1px solid #F6F7F9;
   position: absolute;
   background-color: white;
   height: 100vh; }
   @media (max-width: 768px) {
     #sidebar {
-      display: block; } }
+      display: none; } }
   #sidebar span {
     color: #90A3BF; }
   #sidebar label {
@@ -363,10 +362,62 @@ main {
     line-height: 150%;
     color: #596780; }
   #sidebar .range {
-    width: 260px; }
+    width: 200px; }
 
 #details {
-  height: 100vh; }
+  height: 100vh;
+  padding-left: 300px; }
+  #details #car #main-image {
+    background-color: #3563E9;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 360px;
+    padding: 24px;
+    margin-bottom: 24px; }
+    @media (max-width: 992px) {
+      #details #car #main-image {
+        margin-bottom: 10px; } }
+    @media (max-width: 768px) {
+      #details #car #main-image {
+        height: 232px; } }
+    #details #car #main-image h3 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 150%;
+      color: white;
+      margin-bottom: 16px;
+      margin-left: 0; }
+      @media (max-width: 768px) {
+        #details #car #main-image h3 {
+          font-size: 16px; } }
+    #details #car #main-image p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: white;
+      margin-bottom: 30px;
+      max-width: 284px; }
+      @media (max-width: 768px) {
+        #details #car #main-image p {
+          font-size: 12px; } }
+    #details #car #main-image img {
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: 1; }
+  #details #car .image-wrapper {
+    border: 2px solid #3563E9;
+    border-radius: 10px;
+    padding: 8px; }
+    #details #car .image-wrapper .image {
+      background-color: #3563E9;
+      border-radius: 10px; }
+  #details #car img {
+    width: 100%; }
 
 #banner {
   background-color: #F6F7F9; }
