@@ -1,6 +1,8 @@
 #details {
-  height: 100vh;
   padding-left: 300px;
+  @include for-tablet-portrait-up {
+    padding: 0;
+  }
   #car {
     #main-image {
       background-color: $primary_color;
@@ -52,13 +54,85 @@
       border: 2px solid $primary_color;
       border-radius: 10px;
       padding: 8px;
-      .image{
+      .image {
         background-color: $primary_color;
         border-radius: 10px;
       }
     }
-    img{
+    img {
       width: 100%;
+      @include for-tablet-portrait-up{
+        margin-bottom: 32px;
+      }
+    }
+    .price {
+      p {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+      }
+      span {
+        font-size: 1.4rem;
+        color: $gray;
+      }
+      .discount {
+        text-decoration: line-through;
+      }
+    }
+    .info {
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+      padding: 24px;
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        display: inline-block;
+        margin-bottom: 13px;
+      }
+      .fa-heart {
+        font-size: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: red;
+      }
+      .rating {
+        margin-bottom: 34px;
+        i {
+          font-size: 15px;
+        }
+        .fa-solid {
+          color: $yellow;
+        }
+        i:last-of-type {
+          margin-right: 10px;
+        }
+        span {
+          font-size: 15px;
+          color: $secondary-text;
+        }
+      }
+      .info-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 200%;
+        color: $secondary-text;
+        margin-bottom: 34px;
+      }
+      .details {
+        margin-bottom: 60px;
+        span {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: $secondary-text;
+        }
+        span.category{
+          color: $span-colors;
+        }
+      }
     }
   }
 }

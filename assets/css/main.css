@@ -342,21 +342,20 @@ nav.menu .fa-bars {
       margin-right: unset; } }
 
 main {
-  background-color: #F6F7F9; }
+  background-color: #f6f7f9; }
 
 #sidebar {
   display: block;
   box-sizing: border-box;
-  padding: 32px 30px;
-  border-top: 1px solid #F6F7F9;
+  padding: 32px 30px 150px;
+  border-top: 1px solid #f6f7f9;
   position: absolute;
-  background-color: white;
-  height: 100vh; }
+  background-color: white; }
   @media (max-width: 768px) {
     #sidebar {
       display: none; } }
   #sidebar span {
-    color: #90A3BF; }
+    color: #90a3bf; }
   #sidebar label {
     font-weight: 600;
     font-size: 20px;
@@ -366,10 +365,12 @@ main {
     width: 200px; }
 
 #details {
-  height: 100vh;
   padding-left: 300px; }
+  @media (max-width: 768px) {
+    #details {
+      padding: 0; } }
   #details #car #main-image {
-    background-color: #3563E9;
+    background-color: #3563e9;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
@@ -411,14 +412,69 @@ main {
       left: 0px;
       z-index: 1; }
   #details #car .image-wrapper {
-    border: 2px solid #3563E9;
+    border: 2px solid #3563e9;
     border-radius: 10px;
     padding: 8px; }
     #details #car .image-wrapper .image {
-      background-color: #3563E9;
+      background-color: #3563e9;
       border-radius: 10px; }
   #details #car img {
     width: 100%; }
+    @media (max-width: 768px) {
+      #details #car img {
+        margin-bottom: 32px; } }
+  #details #car .price p {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px; }
+  #details #car .price span {
+    font-size: 1.4rem;
+    color: #90a3bf; }
+  #details #car .price .discount {
+    text-decoration: line-through; }
+  #details #car .info {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px; }
+    #details #car .info h3 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      display: inline-block;
+      margin-bottom: 13px; }
+    #details #car .info .fa-heart {
+      font-size: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: red; }
+    #details #car .info .rating {
+      margin-bottom: 34px; }
+      #details #car .info .rating i {
+        font-size: 15px; }
+      #details #car .info .rating .fa-solid {
+        color: #FBAD39; }
+      #details #car .info .rating i:last-of-type {
+        margin-right: 10px; }
+      #details #car .info .rating span {
+        font-size: 15px;
+        color: #596780; }
+    #details #car .info .info-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+      color: #596780;
+      margin-bottom: 34px; }
+    #details #car .info .details {
+      margin-bottom: 60px; }
+      #details #car .info .details span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #596780; }
+      #details #car .info .details span.category {
+        color: #90a3bf; }
 
 #banner {
   background-color: #f6f7f9; }
@@ -470,7 +526,7 @@ main {
   #banner .banner-item.two {
     background-color: #3563e9; }
     #banner .banner-item.two button {
-      background-color: #54A6FF; }
+      background-color: #54a6ff; }
   #banner .selections-wrapper {
     padding-top: 32px;
     position: relative; }
@@ -511,10 +567,71 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      background-color: #3563E9;
+      background-color: #3563e9;
       font-size: 20px;
       padding: 15px;
       border-radius: 10px; }
+
+.card-component, .card {
+  padding: 2.4rem;
+  background-color: #ffffff;
+  border-radius: 10px; }
+  .card-component .car-name, .card .car-name {
+    font-size: 2rem;
+    font-weight: 700; }
+  .card-component .like .fa-heart, .card .like .fa-heart {
+    font-size: 2rem;
+    cursor: pointer; }
+    .card-component .like .fa-heart.active, .card .like .fa-heart.active {
+      color: red; }
+  .card-component .car-model, .card .car-model {
+    font-size: 1.4rem;
+    color: #90a3bf;
+    font-weight: 700; }
+  .card-component .car-img, .card .car-img {
+    padding: 8rem 1.2rem; }
+    .card-component .car-img img, .card .car-img img {
+      width: 100%; }
+  .card-component .parameters, .card .parameters {
+    margin-bottom: 2.6rem; }
+    .card-component .parameters span, .card .parameters span {
+      font-size: 1.2rem;
+      color: #90a3bf;
+      margin-left: 0.6rem; }
+    .card-component .parameters img, .card .parameters img {
+      width: 2rem; }
+  .card-component .price, .card .price {
+    font-size: 2rem;
+    font-weight: 700; }
+    .card-component .price span, .card .price span {
+      font-size: 1.4rem;
+      color: #90a3bf; }
+  .card-component .discount, .card .discount {
+    color: #90a3bf;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+    text-decoration: line-through; }
+
+.cars-category .heading {
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cars-category .heading .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #90a3bf;
+    margin-left: 2rem; }
+  .cars-category .heading .view-all {
+    color: #3563e9;
+    font-size: 1.6rem;
+    font-weight: 600; }
+
+.car-count {
+  font-size: 14px;
+  color: #90a3bf;
+  font-weight: 500; }
 
 main {
   background-color: #f6f7f9;
