@@ -15,7 +15,6 @@ liked.forEach(heart => {
 
 
 // PAYMENT PAGE
-
 let payments = Array.from(document.getElementsByClassName('pick_method'));
 let methods = Array.from(document.getElementsByClassName('payment_method_content'));
 let method;
