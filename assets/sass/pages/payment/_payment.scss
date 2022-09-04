@@ -12,17 +12,6 @@ main {
 
 #payment_right_col {
     padding-inline-start: 2rem;
-    // @media (max-width: 991px) {
-    //     display: none;  
-    // }
-}
-
-#payment_right_col_mobile {
-    display: none;
-    @media (max-width: 991px) {
-        display: initial; 
-        padding: 0; 
-    }
 }
 
 .rental_summary {
