@@ -375,10 +375,12 @@ footer {
   z-index: 3; }
 
 #details {
-  padding-left: 300px; }
-  @media (max-width: 768px) {
-    #details {
-      padding: 0; } }
+  box-sizing: border-box; }
+  #details .details-wrapper {
+    padding-left: 200px; }
+    @media (max-width: 768px) {
+      #details .details-wrapper {
+        padding: 20px 0; } }
   #details #car #main-image {
     background-color: #3563e9;
     overflow: hidden;
@@ -430,9 +432,6 @@ footer {
       border-radius: 10px; }
   #details #car img {
     width: 100%; }
-    @media (max-width: 768px) {
-      #details #car img {
-        margin-bottom: 32px; } }
   #details #car .price p {
     font-weight: 700;
     font-size: 28px;
@@ -447,6 +446,9 @@ footer {
     background-color: white;
     border-radius: 10px;
     padding: 24px; }
+    @media (max-width: 768px) {
+      #details #car .info {
+        margin-top: 20px; } }
     #details #car .info h3 {
       font-weight: 700;
       font-size: 32px;
@@ -477,7 +479,7 @@ footer {
       color: #596780;
       margin-bottom: 34px; }
     #details #car .info .details {
-      margin-bottom: 60px; }
+      margin-bottom: 36px; }
       #details #car .info .details span {
         font-weight: 400;
         font-size: 20px;
