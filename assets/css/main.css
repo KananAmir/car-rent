@@ -227,13 +227,23 @@ nav.desktop {
         right: 20px; }
   nav.desktop .right {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     nav.desktop .right i {
       padding: 10px;
       border: 1px solid rgba(195, 212, 233, 0.4);
       border-radius: 50%;
       font-size: 20px;
       margin-right: 20px; }
+    nav.desktop .right #heart-count {
+      background-color: red;
+      color: white;
+      padding: 5px 6px;
+      font-size: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      left: 25px; }
 
 nav.mobile {
   display: none;
@@ -556,17 +566,35 @@ main {
 body {
   position: relative; }
 
+#sidebar.active {
+  display: block !important; }
+
 #sidebar {
   height: 100%;
   display: block;
+  position: relative;
+  z-index: 3;
   box-sizing: border-box;
   padding: 32px 30px;
   border-top: 1px solid #F6F7F9;
   position: absolute;
   background-color: white; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     #sidebar {
-      display: none; } }
+      display: none; }
+      #sidebar .fa-x {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 20px; } }
+  #sidebar .fa-x {
+    display: none; }
+    @media (max-width: 992px) {
+      #sidebar .fa-x {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 20px; } }
   #sidebar span {
     color: #90a3bf; }
   #sidebar label {
@@ -579,13 +607,13 @@ body {
 
 footer {
   position: relative;
-  z-index: 3; }
+  z-index: 4; }
 
 #details {
   box-sizing: border-box; }
   #details .details-wrapper {
-    padding-left: 200px; }
-    @media (max-width: 768px) {
+    padding-left: 250px; }
+    @media (max-width: 992px) {
       #details .details-wrapper {
         padding: 20px 0; } }
   #details #car #main-image {
@@ -605,6 +633,8 @@ footer {
       #details #car #main-image {
         height: 232px; } }
     #details #car #main-image h3 {
+      position: relative;
+      z-index: 2;
       font-weight: 600;
       font-size: 32px;
       line-height: 150%;
@@ -615,6 +645,8 @@ footer {
         #details #car #main-image h3 {
           font-size: 16px; } }
     #details #car #main-image p {
+      position: relative;
+      z-index: 2;
       font-weight: 500;
       font-size: 16px;
       line-height: 150%;
@@ -625,18 +657,20 @@ footer {
         #details #car #main-image p {
           font-size: 12px; } }
     #details #car #main-image img {
-      width: 100%;
       position: absolute;
+      z-index: 1;
       bottom: 0px;
       left: 0px;
       z-index: 1; }
   #details #car .image-wrapper {
+    cursor: pointer; }
+  #details #car .image-wrapper.active {
     border: 2px solid #3563E9;
     border-radius: 10px;
     padding: 8px; }
-    #details #car .image-wrapper .image {
-      background-color: #3563E9;
-      border-radius: 10px; }
+  #details #car .image {
+    background-color: #3563E9;
+    border-radius: 10px; }
   #details #car img {
     width: 100%; }
   #details #car .price p {
@@ -692,6 +726,9 @@ footer {
         font-size: 20px;
         line-height: 150%;
         color: #596780; }
+        @media (max-width: 768px) {
+          #details #car .info .details span {
+            font-size: 16px; } }
       #details #car .info .details span.category {
         color: #90a3bf; }
 

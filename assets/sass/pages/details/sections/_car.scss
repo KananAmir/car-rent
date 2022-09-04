@@ -1,8 +1,8 @@
 #details {
   box-sizing: border-box;
   .details-wrapper{
-    padding-left: 200px;
-    @include for-tablet-portrait-up {
+    padding-left: 250px;
+    @include for-tablet-landscape-up {
       padding: 20px 0;
     }
   }
@@ -24,6 +24,8 @@
         height: 232px;
       }
       h3 {
+        position: relative;
+        z-index: 2;
         font-weight: 600;
         font-size: 32px;
         line-height: 150%;
@@ -35,6 +37,8 @@
         }
       }
       p {
+        position: relative;
+        z-index: 2;
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
@@ -46,21 +50,24 @@
         }
       }
       img {
-        width: 100%;
         position: absolute;
+        z-index: 1;
         bottom: 0px;
         left: 0px;
         z-index: 1;
       }
     }
-    .image-wrapper {
+    .image-wrapper{
+      cursor: pointer;
+    }
+    .image-wrapper.active{
       border: 2px solid $primary_color;
       border-radius: 10px;
       padding: 8px;
-      .image {
-        background-color: $primary_color;
-        border-radius: 10px;
-      }
+    }
+    .image {
+      background-color: $primary_color;
+      border-radius: 10px;
     }
     img {
       width: 100%;
@@ -131,6 +138,9 @@
           font-size: 20px;
           line-height: 150%;
           color: $secondary-text;
+          @include for-tablet-portrait-up {
+            font-size: 16px;
+          }
         }
         span.category{
           color: $span-colors;
