@@ -53,12 +53,23 @@ nav.desktop {
   .right {
     display: flex;
     align-items: center;
+    position: relative;
     i {
       padding: 10px;
       border: 1px solid rgba(195, 212, 233, 0.4);
       border-radius: 50%;
       font-size: 20px;
       margin-right: 20px;
+    }
+    #heart-count{
+      background-color: red;
+      color: white;
+      padding: 5px 6px;
+      font-size: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      left: 25px;
     }
   }
 }

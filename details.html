@@ -32,6 +32,7 @@
         </form>
       </div>
       <div class="right">
+        <div id="heart-count"></div>
         <i class="fa-solid fa-heart"></i>
         <i class="fa-solid fa-bell"></i>
         <i class="fa-solid fa-gear"></i>
@@ -40,7 +41,7 @@
     </nav>
     <nav class="mobile menu">
       <div class="heading">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="sidebar-btn"></i>
         <h3>MORENT</h3>
         <img src="./assets/media/profilePic.png" alt="" />
       </div>
@@ -51,8 +52,7 @@
       </form>
     </nav>
   </header>
-  <nav id="sidebar">
-    <div class="">
+  <nav id="sidebar" >
       <div id="type" class="mb-5">
         <span class="mb-4 d-inline-block">TYPE</span>
         <div>
@@ -112,7 +112,6 @@
           </div>
         </div>
       </div>
-    </div>
   </nav>
 
   <main id="details">
@@ -125,21 +124,25 @@
                 <h3>Sports car with the best design and acceleration</h3>
                 <p>Safety and comfort while driving a
                   futuristic and elegant sports car</p>
-                <img src="./assets/media/nissanGT-R.png" alt="">
+                <img id="mainImg" src="./assets/media/nissanGT-R.png" alt="">
               </div>
               <div class="row">
                 <div class="col-4">
-                  <div class="image-wrapper">
+                  <div class="image-wrapper active">
                     <div class="image">
-                      <img src="./assets/media/View1.png" alt="">
+                      <img class="car-image" src="./assets/media/View1.png" alt="">
                     </div>
                   </div>
                 </div>
                 <div class="col-4">
-                  <img src="./assets/media/View2.png" alt="">
+                  <div class="image-wrapper">
+                    <img class="car-image" src="./assets/media/View2.png" alt="">
+                  </div>
                 </div>
                 <div class="col-4">
-                  <img src="./assets/media/View3.png" alt="">
+                  <div class="image-wrapper">
+                    <img class="car-image" src="./assets/media/View3.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
