@@ -424,38 +424,27 @@ main {
 .apply_promocode {
   display: flex;
   box-sizing: border-box;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 #apply_button {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.4rem;
   color: #1A202C;
-  position: relative;
-  left: 74%;
+  position: absolute;
+  left: 75%;
   bottom: 4rem;
-  cursor: pointer; }
-  @media (max-width: 1200px) {
-    #apply_button {
-      left: 64%; } }
-
-#apply_button_mobile {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.4rem;
-  color: #1A202C;
-  position: relative;
-  left: 80%;
-  bottom: 4rem;
+  top: 27%;
   cursor: pointer; }
   @media (max-width: 490px) {
-    #apply_button_mobile {
+    #apply_button {
       font-size: 1.35rem; } }
   @media (max-width: 400px) {
-    #apply_button_mobile {
+    #apply_button {
       font-size: 1.1rem; } }
   @media (max-width: 400px) {
-    #apply_button_mobile {
+    #apply_button {
       font-size: 0.9rem; } }
 
 .rental-summary_footer {
@@ -470,7 +459,8 @@ main {
 
 .stepRow {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  row-gap: 2rem; }
 
 .step {
   border-radius: 1rem;
@@ -583,7 +573,7 @@ body {
   height: 100%;
   display: block;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   box-sizing: border-box;
   padding: 32px 30px;
   border-top: 1px solid #F6F7F9;
@@ -617,7 +607,7 @@ body {
 
 footer {
   position: relative;
-  z-index: 3; }
+  z-index: 4; }
 
 #details {
   box-sizing: border-box; }
@@ -948,6 +938,12 @@ footer {
   font-size: 14px;
   color: #90a3bf;
   font-weight: 500; }
+
+@media (max-width: 768px) {
+  .cars-category .popular-cars {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll; } }
 
 main {
   background-color: #F6F7F9;

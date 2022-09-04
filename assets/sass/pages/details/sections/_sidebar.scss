@@ -8,7 +8,7 @@ body {
   height: 100%;
   display: block;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   @include for-tablet-landscape-up {
     display: none;
     .fa-x {
@@ -47,5 +47,5 @@ body {
 }
 footer {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }

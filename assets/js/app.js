@@ -2,7 +2,9 @@
 let likeCount = 0;
 let likes = document.querySelector("#heart-count")
 let liked = document.querySelectorAll('.fa-heart');
-likes.innerText = likeCount
+if(likes){
+    likes.innerText = likeCount
+}
 
 liked.forEach(heart => {
     heart.addEventListener('click', function () {
@@ -21,19 +23,20 @@ liked.forEach(heart => {
     });
 });
 
-
 //menu
 
 let menuBtn = document.getElementById("sidebar-btn");
 let sideBar = document.getElementById("sidebar");
 
-menuBtn.addEventListener("click", function(){
-    if(sideBar.classList.contains("active")){
-        sideBar.classList.remove("active");
-    }else{
-        sideBar.classList.add("active")
-    }
-})
+if(menuBtn){
+    menuBtn.addEventListener("click", function(){
+        if(sideBar.classList.contains("active")){
+            sideBar.classList.remove("active");
+        }else{
+            sideBar.classList.add("active")
+        }
+    })
+}
 
 
 //images 
@@ -51,3 +54,22 @@ carImages.forEach(carImage => {
         mainImg.src = image
     })
 })
+// PAYMENT PAGE
+let payments = Array.from(document.getElementsByClassName('pick_method'));
+let methods = Array.from(document.getElementsByClassName('payment_method_content'));
+let method;
+
+function changeVisibility(element) {
+    if (element.id === method) {
+        element.style.display = 'inherit';
+    } else {
+        element.style.display = 'none';
+    }
+}
+
+function showMethod(event) {
+    method = event.target.value;
+    methods.forEach(element => changeVisibility(element));
+}
+
+payments.forEach(method => method.addEventListener('change', showMethod));
